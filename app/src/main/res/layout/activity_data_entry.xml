@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.DataEntryActivity">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_light_orange"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="45"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="BOB"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cv_title">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/buyTextColor"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center|start"
+            android:text="Customer ID"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/rounded_inner_white_ourte_gray">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:id="@+id/edtCustomerId"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/black"
+                    android:background="@null"
+                    android:gravity="center|start"
+                    android:paddingLeft="@dimen/_10sdp"
+         />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13ssp"
+                android:visibility="gone"
+                android:textColor="@color/buyTextColor"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center|start"
+                android:text="Session ID"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/rounded_inner_white_ourte_gray">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtSessionId"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/black"
+                    android:background="@null"
+                    android:gravity="center|start"
+                    android:paddingLeft="@dimen/_10sdp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13ssp"
+                android:visibility="gone"
+                android:text="Heartbeat Token"
+                android:textColor="@color/buyTextColor"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center|start" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:visibility="gone"
+                android:background="@drawable/rounded_inner_white_ourte_gray">
+                <androidx.appcompat.widget.AppCompatEditText
+                   android:id="@+id/edtHeartBeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/black"
+                    android:background="@null"
+                    android:gravity="center|start"
+                    android:paddingLeft="@dimen/_10sdp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/buyTextColor"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center|start"
+                android:text="Channel ID"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/rounded_inner_white_ourte_gray">
+                <androidx.appcompat.widget.AppCompatEditText
+                   android:id="@+id/edtChannelId"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/black"
+                    android:background="@null"
+                    android:gravity="center|start"
+                    android:paddingLeft="@dimen/_10sdp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_inner_orange"
+                android:layout_width="@dimen/_105sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:textSize="@dimen/_13ssp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/black"
+                android:maxLines="3"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Kotak Balanced Advantag e Fund Reg-G | Current NAV : 12.71(28-Dec-2020)"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/buyTextColor"
+                    android:text="@string/folio_no_"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtFolioNumber"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/black"
+                    android:text="K123454"
+                    android:layout_marginLeft="@dimen/_2sdp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/dotted_line"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/buyTextColor"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/investment_account"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/investmentAccountName"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_3sdp"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_20sdp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight=".8">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13ssp"
+                        android:textColor="@color/buyTextColor"
+                        android:text="@string/switch_by"/>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/rounded_inner_white_ourte_gray">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/_13ssp"
+                            android:textColor="@color/white"
+                            android:background="#f57222"
+                            android:gravity="center"
+
+                            android:layout_weight="1"
+                            android:textAllCaps="true"
+                            android:text="@string/Amount"/>
+                        <View
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@color/light_gray"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtUnits"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/_13ssp"
+                            android:textColor="@color/buyTextColor"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textAllCaps="true"
+                            android:text="@string/unit"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13ssp"
+                        android:textColor="@color/buyTextColor"
+                        android:text="@string/or"/>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/rounded_inner_white_ourte_gray">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtFullSwitch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/_13ssp"
+                            android:textColor="@color/buyTextColor"
+                            android:gravity="center"
+                            android:text="@string/full_switch"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_20sdp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13ssp"
+                        android:textColor="@color/buyTextColor"
+                        android:text="@string/current_fund_value"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtCurrentFundValue"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13ssp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:ellipsize="end"
+                        android:lines="1"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13ssp"
+                        android:textColor="@color/buyTextColor"
+                        android:text="@string/saleableunit"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtSealableUnits"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13ssp"
+                        android:textColor="@color/black"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:layout_marginTop="@dimen/_5sdp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/buyTextColor"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/switch_fund"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/rounded_inner_white_ourte_gray">
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/spineerSwitchFund"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/buyTextColor"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/sell_amoiunt"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/rounded_inner_white_ourte_gray">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:id="@+id/edtAMount"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/black"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:inputType="number"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <TextView
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/colorGray"
+                android:text="Exit Load/ Tax may apply"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/color_rad"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center|start"
+                android:text="Note: Saleable Units show unts available for sale(i.e. units net of redemption/switch out order placed but not executed)."/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddToCart"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_inner_orange"
+                android:layout_width="@dimen/_105sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:text="@string/add_cart"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:textSize="@dimen/_13ssp"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

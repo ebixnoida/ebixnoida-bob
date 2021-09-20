@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.DashboardFragment">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearHeader">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center|start"
+                    android:layout_weight="1">
+                    <TextView
+
+                        android:id="@+id/menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="25dp"
+
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="@string/fa_icon_menu"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Setup"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_light_orange"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+        <View android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/light_gray"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:padding="10dp"
+        android:textColor="@color/color_light_orange"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome you to Bank of Baroda - Our Online Wealth Management Portal" />
+
+    <androidx.core.widget.NestedScrollView
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:padding="10dp"
+                android:textColor="@color/colorGray"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank of Baroda comes with pre loaded a host of in-build feature to plan your investment goals, stay updated on the latest market trends and monitor you investment portfolio." />
+
+            <TextView
+                android:padding="8dp"
+                android:textColor="@color/colorGray"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•	Power packed features to help you create wealth!" />
+
+            <TextView
+                android:padding="8dp"
+                android:textColor="@color/colorGray"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•	Risk Profiling’ section helps you access your risk appetite and build an investment portfolio that stays in line with your investment objectives. " />
+            <TextView
+                android:padding="8dp"
+                android:textColor="@color/colorGray"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•	‘Transaction’ section opens doors to a host of Mutual Funds transaction options allowing you to place one time subscription orders and set up Investment Plans such as Systematic Investment Plan, Systematic Transfer Plan, Systematic Withdrawal Plan and Redemption orders instantly." />
+            <TextView
+                android:padding="8dp"
+                android:textColor="@color/colorGray"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•	‘Dashboard’ section gives you a consolidated view of your wealth portfolio and its performance." />
+            <TextView
+                android:padding="8dp"
+                android:textColor="@color/colorGray"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•	‘Reports’ section gives you a comprehensive view on your existing holdings, realized gain/ loss statement, past transaction details and information on investment maturities." />
+            <TextView
+                android:padding="8dp"
+                android:textColor="@color/colorGray"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•	‘Portfolio Analytics’ section gives you an insight into the overall performance of your portfolio, its performance across different scheme categories and exposure of your portfolio across schemes from various Asset Management Companies." />
+            <TextView
+                android:padding="8dp"
+                android:textColor="@color/colorGray"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•	‘System cut off’ for placing orders in liquid funds is 12:00 pm and for non-liquid funds is 1:30 pm. Orders placed on holidays will be processed on next business day." />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_inner_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"/>
+
+
+                <TextView
+                    android:id="@+id/txtNext"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_inner_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
