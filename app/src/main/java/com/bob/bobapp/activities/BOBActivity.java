@@ -809,9 +809,9 @@ public class BOBActivity extends BaseActivity implements OnItemDeleteListener {
 
     private void authenticateUser(String ucc, String channelId) {
 
-        AuthenticateRequest.createAuthenticateRequestObject("false", "069409856", "true", "14", "0", "0");
+     //   AuthenticateRequest.createAuthenticateRequestObject("false", "069409856", "true", "14", "0", "0");
 
-     //   AuthenticateRequest.createAuthenticateRequestObject("false", ucc, "true", channelId, "0", "0");
+        AuthenticateRequest.createAuthenticateRequestObject("false", ucc, "true", channelId, "0", "0");
 
         util.showProgressDialog(context, true);
 
